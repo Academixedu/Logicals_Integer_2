@@ -26,6 +26,16 @@ public class Arm {
         int n = countDigits(a); // Calculate the number of digits in the input number
         
       // Write the Logic to know the sum value
+      while(a>0){
+        b=a%10;
+        int pow=1;
+        for(int i=1;i<=n;i++){
+            pow=pow*b;
+
+        }
+        sum=sum+pow;
+        a=a/10;
+      }
     
         if (temp == sum) {
             System.out.println(temp + " is an Armstrong");
@@ -33,8 +43,6 @@ public class Arm {
             System.out.println(temp + " is not an Armstrong");
         }
     }
-
-    // Method to count the number of digits in a number
 
 
     public static void main(String[] args) {
