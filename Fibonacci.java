@@ -1,4 +1,3 @@
-package Integer;
 import java.util.Scanner;
 public class Fibonacci {
 public void scan() {
@@ -12,7 +11,14 @@ public void scan() {
 	d=in.nextInt();
 	System.out.println("First Number"+a);
 	System.out.println("Second Number"+b);
-// prepare Logic to find out Fibanocci series and print it
+	
+	System.out.println("Fibonacci Series:");
+	for(int e=0;e<d;e++){
+		c=a+b;
+		System.out.println(c+",");
+		a=b;
+		b=c;
+	}
 }	
 	public static void main(String[] args) {
 		Fibonacci f=new Fibonacci();
