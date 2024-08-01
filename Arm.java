@@ -27,6 +27,14 @@ public class Arm {
         
       // Write the Logic to know the sum value
     
+      for(;temp!=0;temp /= 10,++n);
+          temp=a;
+          a=temp%10;
+          for(;temp!=0;temp /=10){
+              a=temp % 10;
+              double result = Math.pow(a,n);
+          }
+    
         if (temp == sum) {
             System.out.println(temp + " is an Armstrong");
         } else {
