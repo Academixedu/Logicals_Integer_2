@@ -24,6 +24,15 @@ public class Arm {
         int a = in.nextInt();
         int temp = a;
         int n = countDigits(a); // Calculate the number of digits in the input number
+        while(a>0){
+            b = a%10;
+            int power = 1;
+            for(int i=0;i<n;i++){
+                power *=b;
+            } 
+            sum +=power;
+            a=a/10;
+        }
         
       // Write the Logic to know the sum value
     
