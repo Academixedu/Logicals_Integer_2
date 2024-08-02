@@ -26,6 +26,21 @@ public class Arm {
         int n = countDigits(a); // Calculate the number of digits in the input number
         
       // Write the Logic to know the sum value
+		while (a > 0) {
+            b = a % 10;
+//            initial power to 1
+            int power = 1;
+//            n states about number of numbers in given int
+            for (int i = 1; i <=n; i++) {
+//            	iterations starts from 0 and rasise to <n ex:
+                power *= b;
+//                power*=1*(3*3*3) three iterations if we take 153
+            }
+            sum += power;
+//            adding it it to sum variable
+            a = a / 10;
+//           by dividing it we can again get remianing value; 
+        }
     
         if (temp == sum) {
             System.out.println(temp + " is an Armstrong");
