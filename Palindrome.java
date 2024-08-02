@@ -6,5 +6,16 @@ System.out.println("Enter");
 	int temp=0;
 	int pal=a;
     // Write your Logic to find out a number ArmStrong or not
+	  while(a!=0){
+		int rem=a%10;
+		temp=temp*10+rem;
+		a=a/10;
+	  }
+	  if(pal==temp){
+		System.out.println("palindrome"+temp);
+	  }
+	  else{
+		System.out.println("Reverse"+temp);
+	  }
+	}
   }
-}
